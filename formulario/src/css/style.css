@@ -1,0 +1,100 @@
+body{
+    background-color: black;
+    color: #ffff;
+    font-family: sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logotipo img{
+    width: 40px;
+    height: 40px;
+}
+
+ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: aliceblue;
+}
+
+a:hover {
+    color: chartreuse;
+    transition: 0.3s all;
+}
+
+#enscreva-se-btn {
+    border: 1px solid chartreuse;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#enscreva-se-btn:hover {
+    background-color: chartreuse;
+    color: #000;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 10px;
+    font-family: poopinsmedium;
+}
+
+span {
+    color: chartreuse;
+}
+
+p {
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poopinslight;
+}
+
+img {
+    width: 580px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: rgba(0, 223, 0, 0.746);
+    color:#ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
