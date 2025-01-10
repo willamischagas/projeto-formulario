@@ -1,46 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/media.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Celke - Cadastrar Usuário</title>
 
-    <title>formulário</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <header>
-        <div class="logotipo">
-            <img src="src/img/logo.jpg" alt="imagem da logotipo">
-        </div>
+    <div class="form-container">
 
-        <ul>
-            <li><a href="home">Home</a></li>
-            <li><a href="Serviços">Serviços</a></li>
-            <li><a href="Sobre">Sobre</a></li>
-            <li><a href="Contato">Contato</a></li>
-            <li><a href="Conta" id="enscreva-se-btn">Abra uma Conta</a></li>
-        </ul>
-    </header>
+        <h1>Cadastrar Usuário</h1>
 
-    <main>
-      <aside>
-        <h2><span>Inscreva-se</span></h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum sunt quaerat deleniti voluptas distinctio cupiditate.
-        </p>
-      </aside>
-      <form>
-        <input type="text" placeholder="Nome">
-        <input type="email" placeholder="E-mail">
-        <input type="submit" value="Enviar">
-      </form>
+        <form name="formuser" action="#" method="POST">
 
-      <article>
-        <img src="/src/img/logo.jpg" alt="imagem ">
-      </article>
-    </main>
+            <input type="text" name="nome" placeholder="Nome completo">
+            <input type="text" name="email" placeholder="Melhor e-mail">
+            <input type="password" name="senha" placeholder="Senha com mínimo 6 caracteres">
+            <input type="password" name="rep_senha" placeholder="Confirmar a senha">
+            <input type="submit" onclick="return validar()" value="Cadastrar">
+
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script src="script.js"></script>
+
 </body>
+
 </html>
